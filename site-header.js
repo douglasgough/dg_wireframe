@@ -29,11 +29,8 @@
     <div class="w-full mx-auto max-w-6xl px-5 sm:px-6">
       <div class="flex items-center justify-between gap-4 py-5">
         <a href="/" class="group inline-flex items-center gap-3">
-          <div class="h-10 w-10 rounded-2xl bg-emerald-100 ring-1 ring-emerald-200/70 flex items-center justify-center">
-            <div class="h-4 w-4 rounded bg-emerald-700/80"></div>
-          </div>
           <div class="leading-tight">
-            <div class="text-sm font-semibold tracking-tight text-slate-900 group-hover:text-emerald-950">Doug Gough</div>
+            <div class="text-md font-semibold tracking-tight text-slate-900 group-hover:text-emerald-950">Doug Gough</div>
             <div class="text-sm text-slate-600">Ongoing Website Care for Churches</div>
           </div>
         </a>

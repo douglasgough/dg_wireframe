@@ -5,51 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Church Website Solutions | Doug Gough</title>
 
-  <!-- Inter -->
+  <!-- Fonts: Inter (body) + Lora (headings) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-          },
-          colors: {
-            steward: {
-              50:  '#f3faf7',
-              100: '#e6f4ee',
-              200: '#cfe9dd',
-              300: '#add8c7',
-              400: '#7fbfa7',
-              500: '#4f9f86',
-              600: '#3f806c',
-              700: '#336757',
-              800: '#2a5347',
-              900: '#23443b',
-            }
-          }
-        }
-      }
-    }
-  </script>
+  <!-- Compiled Tailwind CSS with custom configuration -->
+  <link rel="stylesheet" href="dist/app.css">
 </head>
 
-<body class="bg-white text-slate-900 font-sans">
+<body class="bg-white text-slate-900 font-body">
   <!-- Header -->
-  <header id="site-header" class="bg-white backdrop-blur border-b border-slate-300"></header>
+  <header id="site-header" class="bg-white backdrop-blur border-b border-slate-300 flex items-center py-4 sm:py-5"></header>
 
   <main>
     <!-- Hero -->
     <section class="relative overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-b from-steward-50 via-white to-white"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-emerald-50 via-white to-white"></div>
 
       <div class="relative mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20">
         <div class="max-w-3xl">
-          <h1 class="text-4xl font-semibold tracking-tight sm:text-5xl">
+          <p class="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-3 py-1 text-sm text-slate-800">
+            <span class="h-2 w-2 rounded-full bg-emerald-700"></span>
+            Website solutions • stewardship • stability • ongoing support
+          </p>
+
+          <h1 class="mt-8 text-4xl font-semibold tracking-tight sm:text-5xl">
             Ongoing Website Support for Churches & Christian Organizations
           </h1>
 
@@ -183,7 +167,7 @@
 </section>
 
 <!-- New Website Builds -->
-<section class="border-t border-slate-200/60 bg-steward-50">
+<section class="border-t border-slate-200/60 bg-emerald-50">
   <div class="mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20">
     <div class="max-w-3xl">
       <h2 class="text-2xl font-semibold tracking-tight text-slate-900">
@@ -266,21 +250,21 @@
 </section>
 
     <!-- Final CTA -->
-    <section id="contact" class="border-t border-slate-300 bg-steward-900 text-white">
+    <section id="contact" class="border-t border-slate-300 bg-emerald-950 text-white">
       <div class="mx-auto max-w-6xl px-5 py-14 sm:px-6 sm:py-20">
         <div class="grid gap-8 md:grid-cols-12 md:items-center">
           <div class="md:col-span-8">
             <h2 class="text-2xl font-semibold tracking-tight">Talk Through Next Steps</h2>
-            <p class="mt-3 text-steward-100/90">
+            <p class="mt-3 text-emerald-100/90">
               Whether you need stabilization, improvement, or a rebuild, I can help you assess what’s urgent and identify the next responsible step. You’ll get a clear recommendation in plain language.
             </p>
           </div>
           <div class="md:col-span-4 md:text-right">
             <a href="/contact.html"
-               class="inline-flex w-full items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-semibold text-steward-900 hover:bg-steward-50 md:w-auto">
+               class="inline-flex w-full items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-semibold text-emerald-950 hover:bg-emerald-50 md:w-auto">
               Start a Conversation
             </a>
-            <p class="mt-3 text-xs text-steward-100/80">
+            <p class="mt-3 text-xs text-emerald-100/80">
               Or email: <span class="underline decoration-white/40 underline-offset-4">hello@douggough.com</span>
             </p>
           </div>

@@ -5,59 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Doug Gough</title>
 
-  <!-- Inter -->
+  <!-- Fonts: Inter (body) + Lora (headings) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-          },
-          colors: {
-            steward: {
-              50:  '#f3faf7',
-              100: '#e6f4ee',
-              200: '#cfe9dd',
-              300: '#add8c7',
-              400: '#7fbfa7',
-              500: '#4f9f86',
-              600: '#3f806c',
-              700: '#336757',
-              800: '#2a5347',
-              900: '#23443b',
-            }
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    html { scroll-behavior: smooth; }
-  </style>
+  <!-- Compiled Tailwind CSS with custom configuration -->
+  <link rel="stylesheet" href="dist/app.css">
 </head>
 
-<body class="bg-white text-slate-900 font-sans">
+<body class="bg-white text-slate-900 font-body">
 
   <!-- Header -->
-  <header id="site-header" class="bg-white backdrop-blur border-b border-slate-300"></header>
+  <header id="site-header" class="bg-white backdrop-blur border-b border-slate-300 flex items-center py-4 sm:py-5"></header>
 
   <main id="main">
     <!-- Hero -->
     <section class="relative overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-b from-steward-50 via-white to-white"></div>
-      <div class="absolute -top-32 right-[-12rem] h-80 w-80 rounded-full bg-steward-100 blur-3xl opacity-60"></div>
-      <div class="absolute top-40 left-[-10rem] h-72 w-72 rounded-full bg-steward-100 blur-3xl opacity-50"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-emerald-50 via-white to-white"></div>
+      <div class="absolute -top-32 right-[-12rem] h-80 w-80 rounded-full bg-emerald-100 blur-3xl opacity-60"></div>
+      <div class="absolute top-40 left-[-10rem] h-72 w-72 rounded-full bg-emerald-100 blur-3xl opacity-50"></div>
 
       <div class="relative mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20">
         <div class="max-w-3xl">
           <p class="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-3 py-1 text-sm text-slate-800">
-            <span class="h-2 w-2 rounded-full bg-steward-600"></span>
+            <span class="h-2 w-2 rounded-full bg-emerald-700"></span>
             Clear next steps • fast stabilization • long-term care
           </p>
 
@@ -100,7 +75,7 @@
             </p>
 
             <a href="/client-portal"
-               class="mt-5 inline-flex w-full items-center justify-center rounded-xl border border-steward-200 bg-steward-50 px-4 py-2.5 text-sm font-semibold text-steward-800 hover:bg-steward-100">
+               class="mt-5 inline-flex w-full items-center justify-center rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-sm font-semibold text-emerald-900 hover:bg-emerald-100">
               Client Login
             </a>
 
@@ -116,7 +91,7 @@
               Best for most requests. Include your website URL and what's going wrong.
             </p>
             <p class="mt-4 text-sm text-slate-800">
-              <a class="text-steward-800 underline decoration-steward-200 underline-offset-4 hover:decoration-steward-400" href="mailto:hello@douggough.com">
+              <a class="text-emerald-900 underline decoration-emerald-200 underline-offset-4 hover:decoration-emerald-400" href="mailto:hello@douggough.com">
                 hello@douggough.com
               </a>
             </p>
@@ -129,7 +104,7 @@
               If you prefer a call, schedule a short conversation and we'll clarify the situation and next steps.
             </p>
             <a href="#"
-               class="mt-5 inline-flex w-full items-center justify-center rounded-xl bg-steward-800 px-4 py-2.5 text-sm font-semibold text-white hover:bg-steward-900 ring-1 ring-black/5">
+               class="mt-5 inline-flex w-full items-center justify-center rounded-xl bg-emerald-900 px-4 py-2.5 text-sm font-semibold text-white hover:bg-emerald-950 ring-1 ring-black/5">
               Scheduling Link
             </a>
           </div>
@@ -152,14 +127,14 @@
                   <div>
                     <label for="name" class="block text-sm font-medium text-slate-900">Name</label>
                     <input id="name" name="name" type="text" autocomplete="name"
-                      class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-steward-500 focus:outline-none focus:ring-2 focus:ring-steward-200"
+                      class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
                       placeholder="Your name" />
                   </div>
 
                   <div>
                     <label for="email" class="block text-sm font-medium text-slate-900">Email</label>
                     <input id="email" name="email" type="email" autocomplete="email"
-                      class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-steward-500 focus:outline-none focus:ring-2 focus:ring-steward-200"
+                      class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
                       placeholder="you@example.com" />
                   </div>
                 </div>
@@ -167,21 +142,21 @@
                 <div>
                   <label for="org" class="block text-sm font-medium text-slate-900">Church / Organization (optional)</label>
                   <input id="org" name="org" type="text" autocomplete="organization"
-                    class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-steward-500 focus:outline-none focus:ring-2 focus:ring-steward-200"
+                    class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
                     placeholder="Organization name" />
                 </div>
 
                 <div>
                   <label for="url" class="block text-sm font-medium text-slate-900">Website URL (optional)</label>
                   <input id="url" name="url" type="url" placeholder="https://"
-                    class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-steward-500 focus:outline-none focus:ring-2 focus:ring-steward-200" />
+                    class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200" />
                 </div>
 
                 <div class="grid gap-6 sm:grid-cols-2">
                   <div>
                     <label for="priority" class="block text-sm font-medium text-slate-900">Priority</label>
                     <select id="priority" name="priority"
-                      class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-steward-500 focus:outline-none focus:ring-2 focus:ring-steward-200">
+                      class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200">
                       <option>Something is broken</option>
                       <option>Ongoing maintenance and support</option>
                       <option>Improvements / next steps</option>
@@ -193,7 +168,7 @@
                   <div>
                     <label for="contact_pref" class="block text-sm font-medium text-slate-900">Preferred contact</label>
                     <select id="contact_pref" name="contact_pref"
-                      class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-steward-500 focus:outline-none focus:ring-2 focus:ring-steward-200">
+                      class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200">
                       <option>Email</option>
                       <option>Phone / call</option>
                       <option>No preference</option>
@@ -204,7 +179,7 @@
                 <div>
                   <label for="message" class="block text-sm font-medium text-slate-900">Message</label>
                   <textarea id="message" name="message" rows="6"
-                    class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-steward-500 focus:outline-none focus:ring-2 focus:ring-steward-200"
+                    class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
                     placeholder="A few sentences is plenty. What’s going on, and what outcome are you hoping for?"></textarea>
                   <p class="mt-2 text-xs text-slate-600">
                     Please don’t include passwords in this form.
@@ -213,13 +188,13 @@
 
                 <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                   <button type="submit"
-                    class="inline-flex items-center justify-center rounded-xl bg-steward-800 px-5 py-3 text-sm font-semibold text-white shadow-sm shadow-steward-900/10 hover:bg-steward-900 ring-1 ring-black/5">
+                    class="inline-flex items-center justify-center rounded-xl bg-emerald-900 px-5 py-3 text-sm font-semibold text-white shadow-sm shadow-emerald-950/10 hover:bg-emerald-950 ring-1 ring-black/5">
                     Send Message
                   </button>
 
                   <p class="text-sm text-slate-800">
                     Or email:
-                    <a class="text-steward-800 underline decoration-steward-200 underline-offset-4 hover:decoration-steward-400"
+                    <a class="text-emerald-900 underline decoration-emerald-200 underline-offset-4 hover:decoration-emerald-400"
                        href="mailto:hello@douggough.com">hello@douggough.com</a>
                   </p>
                 </div>
@@ -261,13 +236,13 @@
     </section>
 
     <!-- CTA footer band -->
-    <section class="border-t border-slate-300 bg-steward-900 text-white">
+    <section class="border-t border-slate-300 bg-emerald-950 text-white">
       <div class="mx-auto max-w-6xl px-5 py-14 sm:px-6 sm:py-16">
         <div class="max-w-3xl">
           <h2 class="text-2xl font-semibold tracking-tight">
             Need help now?
           </h2>
-          <p class="mt-4 text-steward-100/90">
+          <p class="mt-4 text-emerald-100/90">
             If your site is down or something feels urgent, send a short note with your URL and what you’re seeing.
             I’ll reply with a clear next step.
           </p>
